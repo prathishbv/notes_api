@@ -1,0 +1,213 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "notes-api",
+    "dateExported": "2024-01-04T14:52:53.638Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "d28177dd-4a86-4f09-9e0d-b0837887c401",
+            "colId": "d64f1b12-e801-49d2-bc95-e73fbfe71c9b",
+            "containerId": "",
+            "name": "search by keyword",
+            "url": "http://localhost:8888/api/search?q=food",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-01-04T14:47:41.517Z",
+            "modified": "2024-01-04T14:47:41.517Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "q",
+                    "value": "food",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDQzODA4NjgsImlhdCI6MTcwNDM3NzI2OCwibmJmIjoxNzA0Mzc3MjY4LCJzdWIiOjN9.gMR-j2hN2_v0Ky_1j8-90041f8PWmMo2AJSMJfYyWhM"
+            },
+            "tests": []
+        },
+        {
+            "_id": "f84e2d55-d102-4534-984e-bd5ad42194d1",
+            "colId": "d64f1b12-e801-49d2-bc95-e73fbfe71c9b",
+            "containerId": "",
+            "name": "get stored notes",
+            "url": "http://localhost:8888/api/notes",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-01-04T14:48:13.484Z",
+            "modified": "2024-01-04T14:48:13.484Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDQzODI2ODQsImlhdCI6MTcwNDM3OTA4NCwibmJmIjoxNzA0Mzc5MDg0LCJzdWIiOjJ9.Rw8p7TJMwtHcJG3LL7EPzq8bdc7psZM85ZB2XWSkZ4w"
+            },
+            "tests": []
+        },
+        {
+            "_id": "55e065eb-4969-4d2c-bc02-896cc2b4c1e7",
+            "colId": "d64f1b12-e801-49d2-bc95-e73fbfe71c9b",
+            "containerId": "",
+            "name": "share notes",
+            "url": "http://localhost:8888/api/notes/5/share",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-01-04T14:48:28.416Z",
+            "modified": "2024-01-04T14:48:28.416Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\" : \"DD\",\n  \"id\": 5\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDQzODA4NjgsImlhdCI6MTcwNDM3NzI2OCwibmJmIjoxNzA0Mzc3MjY4LCJzdWIiOjN9.gMR-j2hN2_v0Ky_1j8-90041f8PWmMo2AJSMJfYyWhM"
+            },
+            "tests": []
+        },
+        {
+            "_id": "5a2b7dec-0a70-4153-96b3-0d690f395c22",
+            "colId": "d64f1b12-e801-49d2-bc95-e73fbfe71c9b",
+            "containerId": "",
+            "name": "login",
+            "url": "http://localhost:8888/api/auth/login",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-01-04T14:48:45.811Z",
+            "modified": "2024-01-04T14:48:45.811Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"DD\",\n  \"password\": \"DD1234\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "471cf049-bb9a-409d-aa79-9ef266f8be3a",
+            "colId": "d64f1b12-e801-49d2-bc95-e73fbfe71c9b",
+            "containerId": "",
+            "name": "delete note",
+            "url": "http://localhost:8888/api/notes/6",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-01-04T14:49:28.669Z",
+            "modified": "2024-01-04T14:49:28.669Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDQzODA4NjgsImlhdCI6MTcwNDM3NzI2OCwibmJmIjoxNzA0Mzc3MjY4LCJzdWIiOjN9.gMR-j2hN2_v0Ky_1j8-90041f8PWmMo2AJSMJfYyWhM"
+            },
+            "tests": []
+        },
+        {
+            "_id": "47c5f189-91e4-48f1-8e12-8046bb7a5044",
+            "colId": "d64f1b12-e801-49d2-bc95-e73fbfe71c9b",
+            "containerId": "",
+            "name": "get notes by id",
+            "url": "http://localhost:8888/api/notes/5",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-01-04T14:49:46.942Z",
+            "modified": "2024-01-04T14:49:46.942Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDQzODA4NjgsImlhdCI6MTcwNDM3NzI2OCwibmJmIjoxNzA0Mzc3MjY4LCJzdWIiOjN9.gMR-j2hN2_v0Ky_1j8-90041f8PWmMo2AJSMJfYyWhM"
+            },
+            "tests": []
+        },
+        {
+            "_id": "5038b4f0-2ab0-4522-a0bb-26286b632735",
+            "colId": "d64f1b12-e801-49d2-bc95-e73fbfe71c9b",
+            "containerId": "",
+            "name": "update note by ID",
+            "url": "http://localhost:8888/api/notes/5",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2024-01-04T14:50:06.874Z",
+            "modified": "2024-01-04T14:50:06.874Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Food\",\n  \"content\": \"Eat Good food and stay healthy\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDQzODA4NjgsImlhdCI6MTcwNDM3NzI2OCwibmJmIjoxNzA0Mzc3MjY4LCJzdWIiOjN9.gMR-j2hN2_v0Ky_1j8-90041f8PWmMo2AJSMJfYyWhM"
+            },
+            "tests": []
+        },
+        {
+            "_id": "7bfc4ebf-b976-4d73-9a24-8d2fa108b6ee",
+            "colId": "d64f1b12-e801-49d2-bc95-e73fbfe71c9b",
+            "containerId": "",
+            "name": "create note",
+            "url": "http://localhost:8888/api/notes",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-01-04T14:50:28.975Z",
+            "modified": "2024-01-04T14:50:28.975Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\" : \"food\",\n  \"content\": \"Eat healthy food\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDQzODA4NjgsImlhdCI6MTcwNDM3NzI2OCwibmJmIjoxNzA0Mzc3MjY4LCJzdWIiOjN9.gMR-j2hN2_v0Ky_1j8-90041f8PWmMo2AJSMJfYyWhM"
+            },
+            "tests": []
+        },
+        {
+            "_id": "10531e4e-ef01-412b-a7cc-524ecfa07b56",
+            "colId": "d64f1b12-e801-49d2-bc95-e73fbfe71c9b",
+            "containerId": "",
+            "name": "signup",
+            "url": "http://localhost:8888/api/auth/signup",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-01-04T14:50:42.635Z",
+            "modified": "2024-01-04T14:50:42.635Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"sanchana\",\n  \"password\": \"sanchana123\",\n  \"email\": \"sanchana@gmail.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1e05e4c0-14fb-475e-becf-8e292fe80d79",
+            "colId": "d64f1b12-e801-49d2-bc95-e73fbfe71c9b",
+            "containerId": "",
+            "name": "login",
+            "url": "http://localhost:8888/api/auth/login",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2024-01-04T14:51:14.851Z",
+            "modified": "2024-01-04T14:51:14.851Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"DD\",\n  \"password\": \"DD1234\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
